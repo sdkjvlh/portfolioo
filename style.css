@@ -1,0 +1,993 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'poppins',sans-serif;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 10px;
+    width: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 0 10px #0ef;
+    background-color: #1f242d;
+}
+.logo{
+    color: white;
+    text-decoration: none;
+    left: 80px;
+    padding-left: 100px;
+    font-size: 30px;
+    opacity: 0;
+    animation: slightright .5s ease forwards;
+}
+.navbar{
+    padding-right: 80px;
+}
+.navbar a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 20px;
+    transition: .3s;
+    animation: slighttop 1s ease forwards;
+    animation-delay: calc(.1s * var(--i));
+}
+nav a:hover ,
+nav a.active{
+    color: #0ef;
+}
+nav a:focus{
+    color: #0ef;
+    text-decoration: wavy
+}
+
+#Home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding-left: 100px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 140px;
+    background-color: #1f242d;
+}
+#Home h3{
+    font-size: 40px;
+    font-family: 500;
+    opacity: 0;
+    animation: slightbottom 1s ease forwards;
+    animation-delay: .5s;
+}
+#Home h3 span{
+    color: #0ef;
+}
+#Home h1{
+    font-size: 56px;
+    font-weight: 500;
+    opacity: 0;
+    animation: slightright 1s ease forwards;
+    animation-delay: .1s;
+}
+#Home h1 span{
+    color: #0ef;
+}
+#home-content p{
+    font-size: 20px;
+    opacity: 0;
+    animation: slightleft 1s ease forwards;
+    animation-delay: .1s;
+}
+.social-media{
+    padding-top: 10px;
+}
+.social-media a{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 20px;
+    color: #0ef;
+    text-decoration: none;
+    padding: 10px;
+    animation: slightright 1s ease forwards;
+    animation-delay: .1s;
+}
+.social-media a:hover{
+    background: #0ef;
+    box-shadow: 0 0 20px #0ef;
+    color: black;
+}
+.button{
+    padding-top: 40px;
+    animation: slightleft 1s ease forwards;
+    animation-delay: .1s;
+}
+.btn{
+    display: inline;
+    font-size: 16px;
+    padding: 12px 12px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: black;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.btn:hover{
+    box-shadow: 0 0 20px #0ef;
+}
+@keyframes slightright {
+    0%{
+        transform: translatex(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translatex(0);
+        opacity: 1;
+    }
+}
+@keyframes slightleft {
+    0%{
+        transform: translatex(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translatex(0);
+        opacity: 1;
+    }
+}
+@keyframes slighttop {
+    0%{
+        transform: translatey(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translatey(0);
+        opacity: 1;
+    }
+}
+@keyframes slightbottom {
+    0%{
+        transform: translatey(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translatey(0);
+        opacity: 1;
+    }
+}
+section{
+    min-height: 100vh;
+    display: flex;
+}
+#About{
+    background-color: #1f242d;
+    color: white;  
+}
+.About-info h1{
+    font-size: 50px;
+    font-weight: 500; 
+    padding-top: 30px;
+}
+.About-info h1 span{
+    color: #0ef;
+}
+.About-info p{
+    font-size: 16px;
+    padding-top: 20px;
+}
+.educationn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px 20px;
+    display: wrap;
+    gap: 10px;
+}
+.box1{
+    width: 310px;
+    height: 340px;
+    background: transparent;
+    padding: 30px 20px;
+    border-radius: 20px;
+    border: 2px solid #0ef;
+    box-shadow: 0 0 8px #0ef;
+    margin: 20px; 
+    color: white;
+    cursor: pointer;
+    
+}
+.box1:hover , .box1:focus{
+    box-shadow: 0 0 30px #0ef;
+}
+.educationn h2{
+    font-size: 22px;
+    padding: 10px;
+}
+.educationn h4{
+    font-size: 18px;
+    padding: 10px;
+}
+.educationn p{
+    font-size: 17px;
+    font-weight: 100px;
+    padding: 10px;
+}
+.educationn h5{
+    font-weight: 100px;
+    font-size: 16px;
+    padding-left: 10px;
+}
+.box2{
+    background: transparent;
+    width: 310px;
+    height: 340px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid #0ef;
+    box-shadow: 0 0 8px #0ef;
+    margin: 20px;
+}
+.box2:hover , .box2:focus{
+    box-shadow: 0 0 30px #0ef;
+}
+.box3{
+    background: transparent;
+    width: 310px;
+    height: 340px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid #0ef;
+    box-shadow: 0 0 8px #0ef;
+    margin: 20px;
+}
+.box3:hover , .box3:focus{
+    box-shadow: 0 0 30px #0ef;
+}
+
+#skill{
+    background-color: #1f242d;
+    padding-top: 30px;
+}
+/*#skill .skill-info2{
+    display: flex;
+    flex-direction:  row;
+}*/
+.skill-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.skill-content1{
+    width: 300px;
+    height: 280px;
+    background: transparent;
+    border: 2px solid #0ef;
+    box-shadow: 0 0 8px #0ef;
+    border-radius: 6px;
+    color: white;
+    padding: 15px;
+}
+.skill-content1 svg{
+    width: 50px;
+    height: 50px;
+    margin-left: 110px;
+}
+
+.skill-content1:hover , .skill-content1:focus{
+    box-shadow: 0 0 30px #0ef;
+}
+.skill-content1 h2{
+    font-size: 18px;
+    padding-left: 25px;
+}
+.skill-content1 p{
+    font-size: 14px;
+    padding-top: 16px;
+}
+.skill-content1 button{
+    width: 80px;
+    height: 25px;
+    border-radius: 8px;
+    border: 2px solid #0ef;
+    box-shadow: 0 0 8px #0ef;
+    background: #0ef;
+    color: white;
+}
+.skill-content1 button:hover, button:focus{
+    box-shadow: 0 0 30px #0ef;
+    color: black;
+}
+.skill-content1 .fed-btn{
+    padding-top: 19px;
+}
+.skill-content2{
+    width: 300px;
+    height: 280px;
+    background: transparent;
+    border: 2px solid #0ef;
+    box-shadow: 0 0 8px #0ef;
+    border-radius: 6px;
+    color: white;
+    padding: 15px;
+}
+.skill-content2 svg{
+    width: 40px;
+    height: 60px;
+    margin-left: 110px;
+}
+.skill-content2:hover , .skill-content2:focus{
+    box-shadow: 0 0 30px #0ef;
+}
+.skill-content2 h2{
+    font-size: 18px;
+    padding-left: 90px;
+}
+.skill-content2 p{
+    font-size: 14px;
+    padding-top: 16px;
+    padding-left: 10px;
+}
+.skill-content2 button{
+    width: 80px;
+    height: 25px;
+    border-radius: 8px;
+    border: 2px solid #0ef;
+    box-shadow: 0 0 8px #0ef;
+    background: #0ef;
+    color: white;
+}
+.skill-content2 button:hover, button:focus{
+    box-shadow: 0 0 30px #0ef;
+    color: black;
+}
+.skill-content2 .fed-btn{
+    padding-top: 19px;
+}
+.skill-content3{
+    width: 300px;
+    height: 280px;
+    background: transparent;
+    border: 2px solid #0ef;
+    box-shadow: 0 0 8px #0ef;
+    border-radius: 6px;
+    color: white;
+    padding: 15px;
+}
+.skill-content3 svg{
+    width: 40px;
+    height: 60px;
+    margin-left: 110px;
+}
+.skill-content3:hover , .skill-content3:focus{
+    box-shadow: 0 0 30px #0ef;
+}
+.skill-content3 h2{
+    font-size: 20px;
+    padding-left: 100px;
+}
+.skill-content3 p{
+    font-size: 14px;
+    padding-top: 20px;
+}
+.skill-content3 button{
+    width: 80px;
+    height: 25px;
+    border-radius: 8px;
+    border: 2px solid #0ef;
+    box-shadow: 0 0 8px #0ef;
+    background: #0ef;
+    color: white;
+}
+.skill-content3 button:hover, button:focus{
+    box-shadow: 0 0 30px #0ef;
+    color: black;
+}
+.skill-content3 .fed-btn{
+    padding-top: 19px;
+}
+
+.skill-content4{
+    width: 300px;
+    height: 280px;
+    background: transparent;
+    border: 2px solid #0ef;
+    box-shadow: 0 0 8px #0ef;
+    border-radius: 6px;
+    color: white;
+    padding: 15px;
+}
+.skill-content4 svg{
+    width: 50px;
+    height: 50px;
+    margin-left: 110px;
+}
+.skill-content4:hover , .skill-content4:focus{
+    box-shadow: 0 0 30px #0ef;
+}
+.skill-content4 h2{
+    font-size: 20px;
+    padding-left: 77px;
+}
+.skill-content4 p{
+    font-size: 14px;
+    padding-top: 20px;
+}
+.skill-content4 button{
+    width: 80px;
+    height: 25px;
+    border-radius: 8px;
+    border: 2px solid #0ef;
+    box-shadow: 0 0 8px #0ef;
+    background: #0ef;
+    color: white;
+    
+}
+.skill-content4 button:hover, button:focus{
+    box-shadow: 0 0 30px #0ef;
+    color: black;
+}
+.skill-content4 .fed-btn{
+    padding-top: 19px;
+}
+.skill-content5{
+    width: 300px;
+    height: 280px;
+    background: transparent;
+    border: 2px solid #0ef;
+    box-shadow: 0 0 8px #0ef;
+    border-radius: 6px;
+    color: white;
+    padding: 15px;
+}
+.skill-content5 svg{
+    width: 45px;
+    height: 45px;
+    margin-left: 110px;
+}
+.skill-content5:hover , .skill-content5:focus{
+    box-shadow: 0 0 30px #0ef;
+}
+.skill-content5 h2{
+    font-size: 20px;
+    padding-left: 77px;
+    padding-top: 10px;
+}
+.skill-content5 p{
+    font-size: 14px;
+    padding-top: 20px;
+}
+.skill-content5 button{
+    width: 80px;
+    height: 25px;
+    border-radius: 8px;
+    border: 2px solid #0ef;
+    box-shadow: 0 0 8px #0ef;
+    background: #0ef;
+    color: white;
+    
+}
+.skill-content5 button:hover, button:focus{
+    box-shadow: 0 0 30px #0ef;
+    color: black;
+}
+.skill-content5 .fed-btn{
+    padding-top: 19px;
+}
+.skill-content6{
+    width: 300px;
+    height: 280px;
+    background: transparent;
+    border: 2px solid #0ef;
+    box-shadow: 0 0 8px #0ef;
+    border-radius: 6px;
+    color: white;
+    padding: 15px;
+}
+.skill-content6 svg{
+    width: 45px;
+    height: 45px;
+    margin-left: 110px;
+}
+.skill-content6:hover , .skill-content6:focus{
+    box-shadow: 0 0 30px #0ef;
+}
+.skill-content6 h2{
+    font-size: 20px;
+    padding-left: 112px;
+    padding-top: 10px;
+}
+.skill-content6 p{
+    font-size: 14px;
+    padding-top: 20px;
+}
+.skill-content6 button{
+    width: 80px;
+    height: 25px;
+    border-radius: 8px;
+    border: 2px solid #0ef;
+    box-shadow: 0 0 8px #0ef;
+    background: #0ef;
+    color: white;
+    
+}
+.skill-content6 button:hover, button:focus{
+    box-shadow: 0 0 30px #0ef;
+    color: black;
+}
+.skill-content6 .fed-btn{
+    padding-top: 19px;
+}
+#contact{
+    background-color: #1f242d;
+}
+form{
+    padding-top: 90px;
+}
+#contact h2{
+    font-size: 30px;
+    color: white;
+    padding-top: 40px;
+    padding-left: 670px;
+}
+#contact h2 span{
+    color: #0ef;
+}
+#contact form{
+    width: 600px;
+    text-align: center;
+    padding-left: 560px;
+}
+form .input-box{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+.input-box .input-field{
+    padding-bottom: 20px;
+}
+form input{
+    background: transparent;
+    border:1px solid #0ef;
+    border-radius: 6px;
+    padding: 18px;
+    color: white;
+    cursor: pointer;
+}
+ form .error-txt{
+     font-size: 15px;
+     color: #d93025;
+     text-align: left;
+     display: none;
+}
+
+form input::placeholder{
+    color: gray;
+}
+form input:hover , form input:focus{
+    box-shadow: 0 0 30px #0ef;
+}
+form textarea{
+    background: transparent;
+    border:1px solid #0ef;
+    border-radius: 6px;
+    padding: 18px;
+    color: white;
+    cursor: pointer;
+}
+form textarea::placeholder{
+    color: gray;
+}
+form textarea:hover , form textarea:focus{
+    box-shadow: 0 0 30px #0ef;
+    border: none;
+    outline: none;
+}
+form button{
+    padding: 12px 32px;
+    background: #0ef;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    box-shadow: 0 0 8px #0ef;
+    margin-left: 60px;
+    margin-top: 20px;
+    width: 300px;
+    cursor: pointer;
+}
+form button:hover , form button:focus{
+    box-shadow: 0 0 30px #0ef;
+    border: none;
+    outline: none;
+}
+@media screen and (max-width:600px){
+    body{
+        width: 100%;
+    }
+    .logo{
+        left: 0;
+         padding-left: 5px;
+         font-size: 20px;
+    }
+    .navbar{
+        padding-right: 50px;
+    }
+    .navbar a{
+        font-size: 15px;
+        padding: 10px;
+    }
+    #Home{
+        padding-left: 19px;
+    }
+    #Home h3{
+        font-size: 20px;
+    }
+    #Home h1{
+        font-size: 25px;
+        font-weight: 100px;
+    }
+    #Home p{
+        font-size: 12px;
+    }
+    #Home .social-media{
+        width: 10px;
+        height: 10px;
+        display: flex;
+        gap: 5px;
+    }
+    .button{
+        padding-top: 60px;
+        font-size: 10px;
+
+    }
+    .btn{
+       font-size: 10px; 
+    }
+    .navbar {
+        padding-right: 800px;
+        display: flex;
+        padding-left: 2px;
+    }
+    .navbar a{
+        font-size: 11px;
+        padding: 9px;
+    }
+    .About-info h1{
+        font-size: 20px;
+        padding-left: 10px;
+        width: 320px;
+        left: 0;
+        margin-right: 800px;
+    }
+    .About-info p{
+        font-size: 10px;
+        padding-left: 0;
+        width: 320px;
+        left: 0;
+        margin-right: 800px;
+    }
+    .educationn{
+        width: 320;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0px 4px;
+        gap: 3px;
+        padding: 10px;
+    }
+    .educationn .box1{
+        width: 200px;
+        height: 200px;
+        margin-left:50px;
+        left: 0;
+    }
+    .educationn .box1 h2{
+        font-size: 14px;
+        padding: 0;
+        left: 0;
+    }
+    .educationn .box1 h4{
+        font-size: 12px;
+        padding: 0;
+        left: 0;
+        padding-top: 5px;
+    }
+    .educationn .box1 p{
+        font-size: 12px;
+        padding: 0;
+        left: 0;
+        padding-top: 5px;
+    }
+    .educationn .box1 h5{
+        font-size: 15px;
+        padding: 0;
+        left: 0;
+        padding-top: 6px;
+    }
+    .educationn .box2{
+        width: 200px;
+        height: 200px;
+        margin-left:50px;
+        left: 0;
+    }
+    .educationn .box2 h2{
+        font-size: 14px;
+        padding: 0;
+        left: 0;
+    }
+    .educationn .box2 h4{
+        font-size: 12px;
+        padding: 0;
+        left: 0;
+        padding-top: 5px;
+    }
+    .educationn .box2 p{
+        font-size: 12px;
+        padding: 0;
+        left: 0;
+        padding-top: 5px;
+    }
+    .educationn .box2 h5{
+        font-size: 15px;
+        padding: 0;
+        left: 0;
+        padding-top: 6px;
+    }
+    .educationn .box3{
+        width: 200px;
+        height: 200px;
+        margin-left:50px;
+        left: 0;
+    }
+    .educationn .box3 h2{
+        font-size: 14px;
+        padding: 0;
+        left: 0;
+    }
+    .educationn .box3 h4{
+        font-size: 12px;
+        padding: 0;
+        left: 0;
+        padding-top: 5px;
+    }
+    .educationn .box3 p{
+        font-size: 12px;
+        padding: 0;
+        left: 0;
+        padding-top: 5px;
+    }
+    .educationn .box3 h5{
+        font-size: 15px;
+        padding: 0;
+        left: 0;
+        padding-top: 6px;
+    }
+    #skill{
+        width: 320px;
+        padding-bottom: 17px;
+    }
+    .skill-content1{
+        width: 120px;
+        height: 150px;
+    }
+    .skill-content1 svg{
+        width: 30px;
+        height: 30px;
+        margin-left: 25px;
+        top: 0;
+    }
+    .skill-content1 h2{
+        font-size: 10px;
+        padding: 0;
+        padding-left: 12px;
+        left: 0;
+    }
+    .skill-content1 p{
+        font-size: 6px;
+        padding-top: 2px;
+    }
+    .skill-content1 .fed-btn{
+        padding-top: 5px;
+    }
+    .skill-content1 button{
+        width: 70px;
+        height: 20px;
+        font-size: 10px;
+    }
+    .skill-content2{
+        width: 120px;
+        height: 150px;
+    }
+    .skill-content2 svg{
+        width: 30px;
+        height: 30px;
+        margin-left: 25px;
+        top: 0;
+    }
+    .skill-content2 h2{
+        font-size: 10px;
+        padding: 0;
+        padding-left: 12px;
+        left: 0;
+    }
+    .skill-content2 p{
+        font-size: 6px;
+        padding-top: 2px;
+    }
+    .skill-content2 .fed-btn{
+        padding-top: 5px;
+    }
+    .skill-content2 button{
+        width: 70px;
+        height: 20px;
+        font-size: 10px;
+    }
+    .skill-content3{
+        width: 120px;
+        height: 150px;
+    }
+    .skill-content3 svg{
+        width: 30px;
+        height: 30px;
+        margin-left: 25px;
+        top: 0;
+    }
+    .skill-content3 h2{
+        font-size: 10px;
+        padding: 0;
+        padding-left: 12px;
+        left: 0;
+    }
+    .skill-content3 p{
+        font-size: 6px;
+        padding-top: 2px;
+    }
+    .skill-content3 .fed-btn{
+        padding-top: 5px;
+    }
+    .skill-content3 button{
+        width: 70px;
+        height: 20px;
+        font-size: 10px;
+    }
+    .skill-content4{
+        width: 120px;
+        height: 150px;
+    }
+    .skill-content4 svg{
+        width: 30px;
+        height: 30px;
+        margin-left: 25px;
+        top: 0;
+    }
+    .skill-content4 h2{
+        font-size: 10px;
+        padding: 0;
+        padding-left: 12px;
+        left: 0;
+    }
+    .skill-content4 p{
+        font-size: 6px;
+        padding-top: 2px;
+    }
+    .skill-content4 .fed-btn{
+        padding-top: 5px;
+    }
+    .skill-content4 button{
+        width: 70px;
+        height: 20px;
+        font-size: 10px;
+    }
+    .skill-content5{
+        width: 120px;
+        height: 150px;
+    }
+    .skill-content5 svg{
+        width: 30px;
+        height: 30px;
+        margin-left: 25px;
+        top: 0;
+    }
+    .skill-content5 h2{
+        font-size: 10px;
+        padding: 0;
+        padding-left: 12px;
+        left: 0;
+    }
+    .skill-content5 p{
+        font-size: 6px;
+        padding-top: 2px;
+    }
+    .skill-content5 .fed-btn{
+        padding-top: 5px;
+    }
+    .skill-content5 button{
+        width: 70px;
+        height: 20px;
+        font-size: 10px;
+    }
+    .skill-content6{
+        width: 120px;
+        height: 150px;
+    }
+    .skill-content6 svg{
+        width: 30px;
+        height: 30px;
+        margin-left: 25px;
+        top: 0;
+    }
+    .skill-content6 h2{
+        font-size: 10px;
+        padding: 0;
+        padding-left: 12px;
+        left: 0;
+    }
+    .skill-content6 p{
+        font-size: 6px;
+        padding-top: 2px;
+    }
+    .skill-content6 .fed-btn{
+        padding-top: 5px;
+    }
+    .skill-content6 button{
+        width: 70px;
+        height: 20px;
+        font-size: 10px;
+    }
+    #contact{
+        width: 320px;
+    }
+    #contact h2{
+        font-size: 14px;
+        height: 30px;
+        padding-left: 110px;
+    }
+    #contact form{
+        width: 200px;
+        text-align: left;
+        padding-left: 27px;
+    }
+    form .input-box{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 3px;
+        left: 0;
+    }
+    .input-box .input-field{
+        padding-bottom: 5px;
+    }
+    form input{
+        padding: 3px;
+        width: 130px;
+        font-size: 10px;
+    }
+    form textarea{
+        padding: 3px;
+        width: 260px;
+        font-size: 10px;
+    }
+    form button{
+        width: 170px;
+        height: 30px;
+        margin-left: 39px;
+        margin-top: 20px;
+        padding: 0;
+    }
+}
